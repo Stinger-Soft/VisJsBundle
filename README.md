@@ -55,6 +55,24 @@ Optionally, use the --symlink attribute to create links rather than copies of th
 $ php app/console assets:install --symlink web
 ```
 
+### Usage
+
+Add the css and js file where needed:
+
+``` html
+{% stylesheets  filter="cssrewrite"
+	'bundles/stingervisjs/css/vis.min.css'
+%}
+	<link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+
+{% javascripts
+	'bundles/stingervisjs/js/vis.min.js'
+%}
+	<script src="{{ asset_url }}" ></script>
+{% endjavascripts %}
+```
+
 
 # Licenses
 
