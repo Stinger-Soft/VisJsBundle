@@ -1,0 +1,38 @@
+{
+	"name" : "stinger/visjs-bundle",
+	"type" : "symfony-bundle",
+	"description" : "Symfony2 Bundle for the dynamic, browser-based visualization library developed by http://visjs.org",
+	"keywords" : [
+		"vis",
+		"visualization",
+		"web based",
+		"browser based",
+		"javascript",
+		"chart",
+		"linechart",
+		"timeline",
+		"graph",
+		"network",
+		"browser"
+	],
+	"homepage" : "http://www.visjs.org",
+	"license" : [
+		"MIT",
+		"Apache-2.0"
+	],
+	"authors" : [{
+			"name" : "Florian Meyer",
+			"email" : "florian.meyer@stinger-soft.net",
+			"homepage" : "http://www.stinger-soft.net"
+		}
+	],
+	"require" : {
+		"symfony/framework-bundle" : ">=2.1"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Stinger\\VisJsBundle" : ""
+		}
+	},
+	"target-dir" : "Stinger/VisJsBundle"
+}
